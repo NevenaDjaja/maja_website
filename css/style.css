@@ -1,0 +1,79 @@
+/* general styles */
+body {
+  font-size: 1em;
+  font-family: Verdana, Helvetica, sans-serif;
+  background-color: #C4D7A4;
+}
+
+#wrap {
+  width: 90%; 
+ background-color: white;
+ /* margin: 30px 20px 0 20px; */
+ margin: 20px auto;
+ padding: 10px 40px;
+}
+#main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* navigation */
+nav {
+  border-bottom: 1px solid #AAA;
+  padding: 10px 0;
+}
+.nav-menu {
+  text-align: center;
+}
+#logo {
+  padding: 40px;
+  text-align: center;
+}
+.ciao {
+  border-bottom: 1px solid black;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding:0 10px;
+ 
+}
+ul li {
+ /* float: left; */
+  display: inline; 
+  padding: 10px; 
+  margin: 10px;
+  padding-right: 30px;
+   
+}
+ul li a{
+  text-decoration: none;
+  color: #AAA;
+}
+#content {
+  clear: both;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* content */
+#epic-wrap {
+
+  margin-top: 30px;
+  
+}
+.epic {
+  float: left;
+  margin-right: 30px;
+  padding: 20px;
+}
+
+/* print page */
+.four-thumbs {
+  float: left;
+  padding: 15px;
+}
