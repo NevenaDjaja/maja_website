@@ -61,14 +61,16 @@ ul li a{
 
 #content {
   clear: both;
-  padding: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
   overflow: hidden;
 }
 
 /* content */
 #epic-wrap {
 
-  margin-top: 30px;
+  margin: 30px auto;
+  
   
 }
 .epic {
