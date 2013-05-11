@@ -1,13 +1,13 @@
 /* general styles */
 body {
-  font-size: 1em;
-  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-family: Helvetica,Arial, Verdana, sans-serif;
   background-color: #C4D7A4;
 }
 
 #wrap {
   width: 90%; 
- background-color: white;
+ background-color: #FFF7DF;
  /* margin: 30px 20px 0 20px; */
  margin: 20px auto;
  padding: 10px 40px;
@@ -20,7 +20,7 @@ body {
 
 /* navigation */
 nav {
-  border-bottom: 1px solid #AAA;
+  border-bottom: 1px solid #999;
   padding: 10px 0;
 }
 .nav-menu {
@@ -54,6 +54,7 @@ ul li a{
   text-decoration: none;
   color: #AAA;
 }
+
 #content {
   clear: both;
   padding: 10px;
@@ -71,9 +72,28 @@ ul li a{
   margin-right: 30px;
   padding: 20px;
 }
+.epic a img {
+  border: none;
+}
 
 /* print page */
 .four-thumbs {
   float: left;
   padding: 15px;
 }
+
+/* print other pages */
+.print-img {
+  float: right;
+  padding: 10px;
+  margin-left: 20px;
+}
+#sidebar {
+  position: absolute;
+  float: left;
+  width: 300px;
+  z-index: 1;
+  line-height: 1.2em;
+}
+
+
