@@ -1,16 +1,24 @@
+/*@font-face {
+  font-family: "Ostrich Sans";
+  src: url('fonts/ostrich-bold.ttf');
+}*/
+
 /* general styles */
 body {
-  font-size: 0.9em;
-  font-family: Helvetica,Arial, Verdana, sans-serif;
+
+  font-family: 'Didact Gothic', sans-serif; 
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
   background-color: #C4D7A4;
 }
 
 #wrap {
   width: 90%; 
- background-color: #FFF7DF;
- /* margin: 30px 20px 0 20px; */
- margin: 20px auto;
- padding: 10px 40px;
+  background-color: #FFF;/*#FFF7DF; */
+  /* margin: 30px 20px 0 20px; */
+  margin: 20px auto;
+  padding: 10px 40px;
 }
 #main {
   max-width: 1000px;
@@ -90,13 +98,16 @@ ul li a{
   float: left;
 }*/
 
-/* print page */
+/* print pages */
+.side-images {
+  margin: 10px;
+}
 .four-thumbs {
   float: left;
   padding: 15px;
 }
 
-/* print other pages */
+/* other print pages */
 .print-img {
   float: right;
   padding: 10px;
@@ -104,13 +115,23 @@ ul li a{
 }
 
 #sidebar {
-
-  width: 300px;
+ /* width: 300px; */
+  font-size: 0.9em;
   z-index: 1;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 #sidebar h3 {
   padding-top: 10px;
+  font-size: 1.2em;
+  
 }
 
-
+#sidebar .role {
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  font-size: 1.1em;
+}
+.year {
+  font-size: 0.8em;
+}
