@@ -9,9 +9,11 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 1em;
-  background-color: #C4D7A4;
+  background-color:  #04BF9D;/*#C4D7A4; */
 }
-
+hr {
+  background-color: #61C9CB;
+}
 #wrap {
   width: 90%; 
   background-color: #FFF;/*#FFF7DF; */
@@ -26,7 +28,8 @@ body {
 
 /* navigation */
 nav {
-  border-bottom: 1px solid #999;
+  border-top: 1px solid #04BF9D;
+  border-bottom: 1px solid #04BF9D;
   padding: 10px 0;
 }
 .nav-menu {
