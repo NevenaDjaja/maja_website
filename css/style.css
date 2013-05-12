@@ -23,12 +23,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-footer {
-  clear: both;
-  border-top: 1px solid #999;
-  margin-top: 20px;
-  padding: 20px;  
-}
 
 /* navigation */
 nav {
@@ -37,22 +31,24 @@ nav {
 }
 .nav-menu {
   text-align: center;
+  font-size: 1.2em;
 }
 #logo {
   padding: 40px;
   text-align: center;
+  font-size: 1.3em;
 }
 #logo a {
   text-decoration: none;
   color: #333;
 }
-.ciao {
+/*.ciao {
   border-bottom: 1px solid black;
   letter-spacing: 1px;
   line-height: 40px;
   margin-bottom: 0px;
   padding-bottom: 10px;
-}
+} */
 ul {
   list-style-type: none;
   padding:0 10px;
@@ -68,8 +64,9 @@ ul li {
 }
 ul li a{
   text-decoration: none;
-  color: #AAA;
+  color: #333;
 }
+
 
 #content {
   clear: both;
@@ -80,7 +77,8 @@ ul li a{
 
 /* content */
 #epic-wrap {
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 .epic {
   float: left;
@@ -90,7 +88,12 @@ ul li a{
 .epic a img {
   border: none;
 }
-
+footer {
+  clear: both;
+  border-top: 1px solid #999;
+  margin-top: 35px;
+  padding: 20px;  
+}
 /* footer */
 /*#copyright {
   float: left;
@@ -126,7 +129,7 @@ ul li a{
   font-weight: bold;
   letter-spacing: 0.06em;
   font-variant: small-caps;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .year {
   font-size: 0.8em;
