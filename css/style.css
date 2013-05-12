@@ -17,6 +17,12 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+footer {
+  clear: both;
+  border-top: 1px solid #999;
+  margin-top: 20px;
+  padding: 20px;  
+}
 
 /* navigation */
 nav {
@@ -68,10 +74,7 @@ ul li a{
 
 /* content */
 #epic-wrap {
-
   margin: 30px auto;
-  
-  
 }
 .epic {
   float: left;
@@ -81,6 +84,11 @@ ul li a{
 .epic a img {
   border: none;
 }
+
+/* footer */
+/*#copyright {
+  float: left;
+}*/
 
 /* print page */
 .four-thumbs {
@@ -94,12 +102,15 @@ ul li a{
   padding: 10px;
   margin-left: 20px;
 }
+
 #sidebar {
-  position: absolute;
-  float: left;
+
   width: 300px;
   z-index: 1;
   line-height: 1.2em;
+}
+#sidebar h3 {
+  padding-top: 10px;
 }
 
 
