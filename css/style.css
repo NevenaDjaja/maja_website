@@ -45,6 +45,9 @@ nav {
   text-decoration: none;
   color: #333;
 }
+#logoimg {
+  float: left;
+}
 /*.ciao {
   border-bottom: 1px solid black;
   letter-spacing: 1px;
