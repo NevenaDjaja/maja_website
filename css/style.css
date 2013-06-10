@@ -5,11 +5,11 @@
 
 /* general styles */
 body {
-  font-family: 'Didact Gothic', sans-serif; 
+  font-family: 'Didact Gothic', Helvetica, sans-serif; 
   font-weight: normal;
   font-style: normal;
   font-size: 1em;
-  background-color:  #04BF9D;/*#C4D7A4; */
+  background-color:  #4CAAAB;/*#C4D7A4; */
 }
 hr {
   background-color: #61C9CB;
@@ -28,36 +28,51 @@ hr {
 
 /* navigation */
 nav {
-  border-top: 1px solid #04BF9D;
-  border-bottom: 1px solid #04BF9D;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
   padding: 10px 0;
 }
 .nav-menu {
   text-align: center;
   font-size: 1.2em;
   font-weight: 550;
+  margin-bottom: 30px;
 }
-/*.nav-menu a {
-  font-variant: small-caps;
-  font-size: 1em;  
-}*/
+.nav-menu a {
+ /* font-variant: small-caps; */
+  font-size: 1.1em;  
+/*  letter-spacing: 0.1em;*/
+}
 
 .nav-menu a:hover {
   color: #4CAAAB;
 }
 
 #logo {
-  padding: 40px;
-  text-align: center;
+  padding: 20px 0 5px 10px;
+  text-align: left;
   font-size: 1.3em;
+  margin-bottom: 25px;
 }
 #logo a {
   text-decoration: none;
+  border: none;
   color: #333;
 }
 #logoimg {
-  float: left;
+ /* float: left; */
 }
+#logotext {
+  display: inline-block;
+  margin-bottom: -7px;
+  margin-left: -15px;
+}
+/*#logo h3 {
+  text-align: left;
+  font-family: Helvetica;
+  margin-top: -10px;
+  display: inline;
+}*/
 /*.ciao {
   border-bottom: 1px solid black;
   letter-spacing: 1px;
@@ -75,6 +90,7 @@ ul li {
   display: inline; 
   padding: 10px; 
   margin: 10px;
+  margin-left: 50px;
   padding-right: 30px;
    
 }
@@ -89,6 +105,7 @@ ul li a{
   padding-left: 30px;
   padding-right: 10px;
   overflow: hidden;
+  min-height: 320px;
 }
 
 /* content */
@@ -123,7 +140,24 @@ footer {
   margin-left: 10px
 }
 
-/* print page front */
+/* about page */
+.about-img {
+  float: right;
+  padding: 10px;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+.about-info a{
+  text-decoration: none;
+  color: #F53D54;
+  /*#4CAAAB;*/ 
+}
+.about-info a:hover {
+  text-decoration: underline;
+}
+
+
+/* print page */
 .side-images {
   margin: 10px;
 }
@@ -143,7 +177,7 @@ footer {
 }
 
 #sidebar {
- /* width: 300px; */
+ /* width: 400px; */
   font-size: 0.9em;
   z-index: 1;
   line-height: 1.4em;
@@ -162,7 +196,7 @@ footer {
   font-size: 0.8em;
 }
 
-/* web */
+/* web page */
 .web-img {
   float: right;
   padding: 10px;
@@ -179,4 +213,69 @@ footer {
 }
 .border-img:nth-child(6), .border-img:nth-child(7){
   padding-bottom: 10px;
+}
+
+/* contact page */
+#contact-field {
+  padding: 20px 10px;
+  margin: 0 20px;
+  min-height: 310px;
+}
+#contact {
+  padding-left: 10px;
+  float: right;
+  margin-bottom: 30px;
+  font-size: 0.9em;
+}
+#name, #email {
+  height: 20px;
+}
+.form-field {
+  padding-top: 10px;
+  
+}
+.input-field {
+  width: 500px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#send-field {
+ /* margin-left: 227px; */
+ float: right;
+}
+#send-button {
+  width: 80px;
+  padding: 3px;
+}
+#send-button:hover {
+  /*
+  border-color: #ccc #bbb #aaa #bbb;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); 
+  background-color: #DDD; */
+}
+#left-side {
+  float: left;
+  width: 400px;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+#left-side h3 {
+  font-weight: 600px;
+}
+#myemail a {
+  text-decoration: none;
+  color: #F53D54;
+}
+.help-msg, #submit-msg {
+  font-size: 0.8em;
+  color: #FF0000;
+}
+#name-help {
+  margin-left: 110px;
+}
+#email-help {
+  margin-left: 50px;
+}
+#msg-help {
+  margin-left: 60px;
 }

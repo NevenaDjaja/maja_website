@@ -16,8 +16,9 @@
       <div id="main">
         <div class="navigation">
           <div id="logo">
-            <img id="logoimg" src="img/MajaLogo2.png" alt="Maja Bogeski Logo">
-            <h3><a href="index.html">Maja Bogeski</a></h3>
+            <a href="print.html"><img id="logoimg" src="img/Maja.Logo.Novo.V2.png" alt="Maja Bogeski Logo"></a>
+            <a href="print.html"><img id="logotext" src="img/Maja.Logo.Novo.Text.V1.png" alt="Maja Bogeski designer"></a>
+         <!--   <h3><a href="index.html">MAJA BOGESKI</a></h3> -->
           </div>
           <nav class="nav-menu">
             <ul>
@@ -29,8 +30,36 @@
           </nav>
           <h2> </h2>
         </div> <!-- /.navigation -->
-        <h3> UNDER CONSTRUCTON </h3>
-        
+        <div id="contact-field">
+          <div id="contact">
+            <form method="post" action="contact.php" id="contact-form">
+              <div id="name-field" class="form-field">
+                <label for="name"> Name </label> <span id="name-help" class="help-msg"></span><br>
+                <input type="text" name="name" id="name" class="input-field">
+              </div> <!-- /#name-field -->
+              <div id="email-field" class="form-field">
+                <label for="email"> Email address </label> <span id="email-help" class="help-msg"></span><br>
+                <input type="text" name="email" id="email" class="input-field">
+              </div> <!-- /#email-field -->
+              
+              <div id="message-field" class="form-field">
+                <label for="message">Your message</label> <span id="msg-help" class="help-msg"></span><br>
+                <textarea id="message" cols="20" rows="6" class="input-field"></textarea>
+              </div> <!-- /#message-field -->
+              
+              <div id="send-field" class="form-field">
+                <span id="submit-msg"></span>
+                <input type="submit" value="send" id="send-button" name="submit">
+              </div>
+            </form>   
+          </div> <!-- /#contact -->
+        <div id="left-side">
+          <h3>I'd love to hear from you!</h3>
+          <p>I am currently looking for opportunities and would love to design web, print and identity for you!<br>
+             If you are interested in working with me, send me a message or email me directly at 
+            <span id="myemail"><a href="mailto:nevena.dunjica@gmail.com?Subject=Mail%20from%website">bogeski.maja@gmail.com</a></span></p>
+        </div> <!-- /#right-side -->
+        </div> <!-- /#contact-field -->
         <footer>
           <div id="copyright">&copy; 2013 Maja Bogeski</div>
           <ul> </ul>
@@ -43,6 +72,79 @@
         
       </div> <!-- /#main -->
     </div> <!--/#wrap --> 
+    <!-- validate the form -->
+    <script>
+      function validateName(input,msg) {
+        if (input.value.length == 0) {
+          // no data, set message
+          if (msg != null) {
+            msg.innerHTML = "*Please enter your name";
+          }
+        return false;
+        } else {
+          if (msg != null) {
+            msg.innerHTML = "";
+          }
+          return true;
+        }
+      } 
+      function validateEmail(input,msg) {
+        if (input.value.length == 0) {
+          // no data, set message
+          if (msg != null) {
+            msg.innerHTML = "*Please enter your email";
+          }
+        return false;
+        } else {
+          if (msg != null) {
+            msg.innerHTML = "";
+          }
+          return true;
+        }
+      } 
+      function validateMsg(input,msg) {
+        if (input.value.length == 0) {
+          // no data, set message
+          if (msg != null) {
+            msg.innerHTML = "*Please enter your text";
+          }
+        return false;
+        } else {
+          if (msg != null) {
+            msg.innerHTML = "";
+          }
+          return true;
+        }
+      } 
+      
+     (function(){
+        var yourname = document.forms[0].name;
+        var youremail = document.forms[0].email;
+        var yourmsg = document.getElementById('message');
+        var submit = document.getElementById('send-button');
+        yourname.addEventListener('blur',function() {
+          validateName(this,document.getElementById('name-help'));
+        },false);
+        youremail.addEventListener('blur',function() {
+          console.log("blah");
+          validateEmail(this,document.getElementById('email-help'));
+        },false);
+        yourmsg.addEventListener('blur',function() {
+          validateMsg(this,document.getElementById('msg-help'));
+        },false);
+        submit.addEventListener('click',function(form) {
+          if (validateName(yourname,document.getElementById('name-help'))&& 
+              validateEmail(youremail,document.getElementById('email-help'))&& 
+              validateMsg(yourmsg,document.getElementById('msg-help'))){
+                console.log("if");
+                form.submit();
+          } else {
+            console.log("blah");
+            document.getElementById('submit-msg').innerHTML = "All fields are required";
+          }
+        },false);
+      })();
+    </script>
   </body>
 </html>
 
