@@ -25,7 +25,13 @@ hr {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+#content {
+  clear: both;
+  padding-left: 30px;
+  padding-right: 10px;
+  overflow: hidden;
+  min-height: 320px;
+}
 /* navigation */
 nav {
   border-top: 1px solid #999;
@@ -100,27 +106,22 @@ ul li a{
 }
 
 
-#content {
-  clear: both;
-  padding-left: 30px;
-  padding-right: 10px;
-  overflow: hidden;
-  min-height: 320px;
-}
+
 
 /* content */
 #epic-wrap {
   margin: 0 auto;
   margin-top: 10px;
+  padding: 0 15px;
 }
-.epic {
+/*.epic {
   float: left;
   margin-right: 30px;
   padding: 20px;
 }
 .epic a img {
   border: none;
-}
+} */
 footer {
   clear: both;
   border-top: 1px solid #999;
@@ -215,6 +216,28 @@ footer {
   padding-bottom: 10px;
 }
 
+/* arrows */
+.relative {
+  position: relative;
+}
+.arrows {
+  
+}
+#left-arrow {
+  position: absolute;
+  top: 8em;
+  left: 0em;
+  z-index: 999;
+  overflow: hidden;
+}
+#right-arrow {
+  position: absolute;
+  top: 8em;
+  right: 0em;
+  z-index: 999;
+  overflow: hidden;
+}
+
 /* contact page */
 #contact-field {
   padding: 20px 10px;
@@ -259,7 +282,7 @@ footer {
   line-height: 1.4em;
 }
 #left-side h3 {
-  font-weight: 600px;
+  font-weight: 600;
 }
 #myemail a {
   text-decoration: none;
@@ -277,4 +300,9 @@ footer {
 }
 #msg-help {
   margin-left: 60px;
+}
+
+
+#dumm {
+  float: left;
 }
